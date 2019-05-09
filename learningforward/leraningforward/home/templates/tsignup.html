@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>
+            Tutor signup
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <style>
+                
+                #id_name {
+                  color: white;
+                } 
+                #id_emailid {
+                  color: white;
+                } 
+                #id_username {
+                  color: white;
+                } 
+                #id_password {
+                  color: white;
+                } 
+                #id_mobileno{
+                  color: white;
+                } 
+               
+                </style>
+    </head>
+    <body class="#bdbdbd grey lighten-1" style=" font-family: 'Raleway',sans-serif;">
+        <div class="container" >
+                <h1 id="heading" class="center-align #3e2723 brown-text" style=" font-family: 'Raleway',sans-serif;">Signup Form</h1>
+                <div class="row" style="margin-left:25%;margin-right:-30%" >
+                <form class="col s6 #212121 grey darken-4 z-depth-5" style=" margin-top: 30px;" method="POST">
+            {% csrf_token %}
+            <br>
+                <div class="input-field col s12" style="font-family: 'Raleway',sans-serif;
+                font-size: 17px;
+                color: white;">
+                                Name :
+                                {{ obj.username }}
+                            
+                            
+                                Password :
+                                {{ obj.password }}
+                           
+                           
+                                Email-Id :
+                                {{ obj.emailid }}
+                           
+                            
+                                Mobile No. :
+                                {{ obj.phoneno }}
+                            
+                                Image :
+                                {{ obj.image }}<br><br>
+                                
+                                Address :
+                                {{ obj.address }}
+                            
+                        
+                </div>
+                <div style="text-align: center">
+            <input type="submit" value="Signup" class="btn red z-depth-5"  ></div>
+        </form>
+    </div>
+    </body>
+</html>

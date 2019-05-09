@@ -1,0 +1,58 @@
+{% load filesize %}
+<html>
+    <head>
+     
+        
+            <link rel="stylesheet" href="/static/ecss/linearicons.css">
+			<link rel="stylesheet" href="/static/ecss/font-awesome.min.css">
+			<link rel="stylesheet" href="/static/ecss/bootstrap.css">
+			<link rel="stylesheet" href="/static/ecss/magnific-popup.css">
+			<link rel="stylesheet" href="/static/ecss/nice-select.css">							
+			<link rel="stylesheet" href="/static/ecss/animate.min.css">
+			<link rel="stylesheet" href="/static/ecss/owl.carousel.css">			
+			<link rel="stylesheet" href="/static/ecss/jquery-ui.css">			
+			<link rel="stylesheet" href="/static/ecss/main.css">
+    </head>
+    <body>
+        <h2 style="text-align: center;color: red">C Pdf & Doc file</h2>
+        <div class="container">
+                <ul class="nav-menu" style="float: right">
+                        <li class="primary-btn text-uppercase"  ><a href="{% url 'ctest' %}">Test</a>
+                        </ul>
+        <table class="table">
+            <thead>
+                <tr >
+                    <th style="text-align: left">FileName</th>
+                    <th style="text-align: center">FileSize</th>
+                    <th style="text-align: right">FileDownload</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if listing %}
+                {% for list in listing %}
+                <tr>
+                        <td style="text-align: left">
+                                {{list.filename}}
+                            </td>
+                            <td style="text-align: center">
+                                {{ list.fileupload.size|filesize }}  
+                            </td>
+                            <td style="text-align: right">
+                               <a href="{{list.fileupload.url}}" class="btn btn-primary btn-sm" target="_blank">FileDownload</a>
+                    </td>
+                    <td>
+                        <!-- <form method="post" action="{% url 'delete' list.id %}">
+                            {% csrf_token %}
+                        <button type="submit" class="btn btn-primary btn-sm" >Delete</button> -->
+                    </form>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% endif %}
+            </tbody>
+            </table>
+        </div>
+
+   
+    </body>
+    </html>

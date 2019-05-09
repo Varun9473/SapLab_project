@@ -1,0 +1,131 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html lang="zxx">
+
+<head>
+	<title>Login Form</title>
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	
+	<!-- css files -->
+	<link rel="stylesheet" href="/static/ecss/style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link rel="stylesheet" href="/static/css/fontawesome-all.css">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //css files -->
+	<!-- web-fonts -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  
+	<!-- //web-fonts -->
+</head>
+
+<body>
+	<div class="video-w3l" data-vide-bg="/static/video/1">
+		<!-- title -->
+		<h1>
+			<span>T</span>utor
+			<span>L</span>ogin
+			<span>F</span>orm</h1>
+		<!-- //title -->
+        <!-- content -->
+        {% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <b><li {% if message.tags %} class="{{ message.tags }}"{% endif %} style="color:red;text-align: center">{{ message }}</li><b>
+    {% endfor %}
+</ul>
+{% endif %}
+
+		<div class="sub-main-w3">
+			<form method="post">
+                {% csrf_token %}
+				<div class="form-style-agile">
+					<label>
+                        <i class="fas fa-user"></i>Username</label>
+                        {{ obj.username }}
+					<!-- <input placeholder="Username" name="Name" type="text" required=""> -->
+				</div>
+				<div class="form-style-agile">
+					<label>
+                        <i class="fas fa-unlock-alt"></i>Password</label>
+                        {{ obj.password }}
+					<!-- <input placeholder="Password" name="Password" type="password" required=""> -->
+				</div>
+				<!-- switch -->
+				<div class="checkout-w3l">
+					<div class="demo5">
+						<div class="switch demo3">
+							<input type="checkbox">
+							<label>
+								<i></i>
+							</label>
+						</div>
+					</div>
+					<a href="#">Remember Me</a>
+				</div>
+				<!-- //switch -->
+				<input type="submit" value="Log In">
+				<!-- social icons -->
+				<div class="footer-social">
+					<h2>Or Login With</h2>
+					<ul>
+						<li>
+							<a href="https://www.facebook.com/">
+								<i class="fab fa-facebook-f icon_facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/login?lang=en">
+								<i class="fab fa-twitter icon_twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-dribbble icon_dribbble"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-google-plus-g icon_g_plus"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- //social icons -->
+			</form>
+		</div>
+		<!-- //content -->
+
+		<!-- copyright -->
+		<div class="footer">
+			<p>&copy; Login Form. All rights reserved | Design by
+				<a href="#">Krati Mishra</a>
+			</p>
+		</div>
+		<!-- //copyright -->
+	
+
+	
+	<!-- Jquery -->
+	<script src="/static/jsq/jquery-2.2.3.min.js"></script>
+	<!-- //Jquery -->
+
+	<!-- Video js -->
+	<script src="/static/jsq/jquery.vide.min.js"></script>
+	<!-- //Video js -->
+</form>
+</div>
+</body>
+
+</html>

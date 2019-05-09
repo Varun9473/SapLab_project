@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <title>Python Quiz</title>
+        <link rel="stylesheet" href="/static/ecss/linearicons.css">
+        <link rel="stylesheet" href="/static/ecss/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/ecss/bootstrap.css">
+        <link rel="stylesheet" href="/static/ecss/magnific-popup.css">
+        <link rel="stylesheet" href="/static/ecss/nice-select.css">							
+        <link rel="stylesheet" href="/static/ecss/animate.min.css">
+        <link rel="stylesheet" href="/static/ecss/owl.carousel.css">			
+        <link rel="stylesheet" href="/static/ecss/jquery-ui.css">			
+        <link rel="stylesheet" href="/static/ecss/main.css">
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+    </head>
+    <body>
+            <div class="container">
+           <b style="color:black;font-size:20px">Following quiz provides Multiple Choice Questions (MCQs) related to Python. You will have to read all the given answers and click over the correct answer. </b>
+           <hr>
+           <form id="quiz" name="quiz">
+            <p>Q 1 - What is the output for −
+
+                    'Forwardlearning' [100:200]?</p>
+            <input type="radio" id="q11" name="q11" value="1">Index error.<br>
+            <input type="radio" id="q11" name="q11" value="2">''<br>
+            <input type="radio" id="q11" name="q11" value="3">Forwardlearning<br>
+            <input type="radio" id="q11" name="q11" value="4">Syntax error<br>
+            <hr>
+            <p>Q 2 - How can we swap two numbers a = 10, b = 20 in python without using third variable?</p>
+            <input type="radio" id="q22" name="q22" value="5">a = b b = a<br>
+            <input type="radio" id="q22" name="q22" value="6">a,b = b,a<br>
+            <input type="radio" id="q22" name="q22" value="7">both a & b <br>
+            <input type="radio" id="q22" name="q22" value="8">b=a a=b<br>
+            <hr>
+            
+            <p>Q 3 - How can we generate random numbers in python using methods?</p>
+            <input type="radio" id="q33" name="q33" value="9">random.uniform ()<br>
+            <input type="radio" id="q33" name="q33" value="10">random.randint ()<br>
+            <input type="radio" id="q33" name="q33" value="11">random.random ()<br>
+            <input type="radio" id="q33" name="q33" value="12">All of the above <br>
+            <hr>
+            <p>Q 4 - What is output for − max(''please help '')</p>
+            <input type="radio" id="q44" name="q44" value="13">s<br>
+            <input type="radio" id="q44" name="q44" value="14">a blank space character<br>
+            <input type="radio" id="q44" name="q44" value="15">e<br>
+            <input type="radio" id="q44" name="q44" value="16">p <br>
+            <hr>
+            
+            <p>Q 5 - Find the output of the code?
+                    def f(a, b = 1, c = 2):
+                    print('a is: ',a, 'b is: ', b, 'c is: ', c)
+                 f(2, c = 2)
+                 f(c = 100, a = 110)
+                
+            </p>
+            <input type="radio" id="q55" name="q55" value="17"> a is: 2 b is: 1 c is: 2
+
+            a is: 110 b is: 1 c is: 100
+            
+            <br>
+            <input type="radio" id="q55" name="q55" value="18">a is: 2 b is: 2 c is: 2
+
+            a is: 110 b is: 2 c is: 100<br>
+            <input type="radio" id="q55" name="q55" value="19">a is: 0 b is: 2 c is: 2
+
+            a is: 110 b is: 0 c is: 100
+            
+            <br>
+            <input type="radio" id="q55" name="q55" value="20">a is: 110 b is: 0 c is: 100
+
+            a is: 110 b is: 0 c is: 100 <br>
+
+            <hr>
+            <p>Q 6 - Which of the following is more accurate for the following declaration? x = Circle()</p>
+            <input type="radio" id="q66" name="q66" value="21">Now you can assign int value to x.<br>
+            <input type="radio" id="q66" name="q66" value="22">x contains a reference to a Circle object.<br>
+            <input type="radio" id="q66" name="q66" value="23">x actually contains an object of type Circle.<br>
+            <input type="radio" id="q66" name="q66" value="24">x contains an int value.
+
+            <br>
+            <hr>
+            <p>Q 7 - Which among them is incorrect for set s={100,101,102,103}</p>
+            <input type="radio" id="q77" name="q77" value="25">Len(s)<br>
+            <input type="radio" id="q77" name="q77" value="26">Sum(s)<br>
+            <input type="radio" id="q77" name="q77" value="27">Print(s[3])<br>
+            <input type="radio" id="q77" name="q77" value="28">Max(s) <br>
+
+            <hr>
+            <p>Q 8 - Which way among them is used to create an event loop ?</p>
+            <input type="radio" id="q88" name="q88" value="29">Window.eventloop()<br>
+            <input type="radio" id="q88" name="q88" value="30">Window.mainloop()<br>
+            <input type="radio" id="q88" name="q88" value="31">Window.loop()<br>
+            <input type="radio" id="q88" name="q88" value="32">Eventloop.window()<br>
+            <hr>
+            <p>Q 9 - How you can lift the pen of in turtle?</p>
+            <input type="radio" id="q99" name="q99" value="33">Turtle.lift()<br>
+            <input type="radio" id="q99" name="q99" value="34">Turtle.liftup()<br>
+            <input type="radio" id="q99" name="q99" value="35">Turtle.penup()<br>
+            <input type="radio" id="q99" name="q99" value="36">Turtle.up()<br>
+        
+        <br>
+        <input id="button" type="button" value="Submit" onclick="check();">
+        </form>
+        <!-- <p id="number_correct"></p> -->
+<script>
+function check(){
+var qu1 = document.quiz.q11.value;
+var qu2 = document.quiz.q22.value;
+var qu3 = document.quiz.q33.value;
+var qu4 = document.quiz.q44.value;
+var qu5 = document.quiz.q55.value;
+var qu6 = document.quiz.q66.value;
+var qu7 = document.quiz.q77.value;
+var qu8 = document.quiz.q88.value;
+var qu9 = document.quiz.q99.value;
+var correct = 0;
+
+if (qu1 == "2"){
+    correct++;
+}
+if (qu2 == "7"){
+    correct++;
+}
+if (qu3 == "12"){
+    correct++;
+}
+if (qu4 == "13"){
+    correct++;
+}
+if (qu5 == "17"){
+    correct++;
+}
+if (qu6 == "22"){
+    correct++;
+}
+if (qu7 == "27"){
+    correct++;
+}
+if (qu8 == "30"){
+    correct++;
+}
+if (qu9 == "35"){
+    correct++;
+}
+// document.getElementById("number_correct").innerHTML = "you got" +correct+ "correct";
+alert("you got  "  +correct+  "  correct")
+}
+</script>
+</div>
+    </body>
+    
+</html>

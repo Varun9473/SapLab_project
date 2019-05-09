@@ -1,0 +1,185 @@
+<html>
+    <head>
+        <title>C Quiz</title>
+        <link rel="stylesheet" href="/static/ecss/linearicons.css">
+        <link rel="stylesheet" href="/static/ecss/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/ecss/bootstrap.css">
+        <link rel="stylesheet" href="/static/ecss/magnific-popup.css">
+        <link rel="stylesheet" href="/static/ecss/nice-select.css">							
+        <link rel="stylesheet" href="/static/ecss/animate.min.css">
+        <link rel="stylesheet" href="/static/ecss/owl.carousel.css">			
+        <link rel="stylesheet" href="/static/ecss/jquery-ui.css">			
+        <link rel="stylesheet" href="/static/ecss/main.css">
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+    </head>
+    <body>
+            <div class="container">
+           <b style="color:black;font-size:20px">Following quiz provides Multiple Choice Questions (MCQs) related to C. You will have to read all the given answers and click over the correct answer. </b>
+        <hr>
+           <form id="quiz" name="quiz">
+            <p>Q 1 -  What is your comment on the below C statement?<br>
+			<br>
+                       signed int *p=(int*)malloc(sizeof(unsigned int));  </p>
+            <input type="radio" id="q11" name="q11" value="1">- Improper type casting.<br>
+            <input type="radio" id="q11" name="q11" value="2"> Would throw Runtime error<br>
+            <input type="radio" id="q11" name="q11" value="3">Memory will be allocated but cannot hold an int value in the memory<br>
+            <input type="radio" id="q11" name="q11" value="4">No issue with statement<br>
+            <hr>
+            <p>Q 2 - What is the output of the following program?<br>
+			<br>
+			
+			    #include<stdio.h><br>
+                void swap(int m, int n)<br>
+                 {<br>
+                         int x = m;<br>
+   
+                          m = n;<br>
+                          n = x;<br>
+                 }<br>
+                 main()<br>
+                 {<br>
+                     int x=5, y=3;<br>
+
+                     swap(x,y);<br>
+                     printf("%d %d", x, y);</p>
+					 
+            <input type="radio" id="q22" name="q22" value="5">3 5<br>
+            <input type="radio" id="q22" name="q22" value="6"> 5 3<br>
+            <input type="radio" id="q22" name="q22" value="7">5 5<br>
+            <input type="radio" id="q22" name="q22" value="8">Compile error<br>
+
+            <hr>
+            <p>Q 3 - What is the output of the following program?<br>
+			<br>
+			
+			#include<stdio.h><br>
+
+             main()<br>
+             { <br>
+               int a[3] = {2,1};<br>
+   
+               printf("%d", a[a[1]]);<br> 
+             }</p> 
+            <input type="radio" id="q33" name="q33" value="9">0<br>
+            <input type="radio" id="q33" name="q33" value="10">1<br>
+            <input type="radio" id="q33" name="q33" value="11">2<br>
+            <input type="radio" id="q33" name="q33" value="12">3 <br>
+            <hr>
+            <p>Q 4 -  The default executable generation on UNIX for a C program is ___</p>
+            <input type="radio" id="q44" name="q44" value="13">a.exe<br>
+            <input type="radio" id="q44" name="q44" value="14">a<br>
+            <input type="radio" id="q44" name="q44" value="15">a.out<br>
+            <input type="radio" id="q44" name="q44" value="16">out.a<br>
+
+            <hr>
+            <p>Q 5 - What is the output of the following program?<br>
+			<br>
+                 #include<stdio.h><br>
+                 main()<br>
+                 {<br> 
+                    char *s = "Abc";<br>
+                    while(*s)<br>
+                   printf("%c", *s++);<br>
+                 }<br>
+            </p>
+            <input type="radio" id="q55" name="q55" value="17">abc<br>
+            <input type="radio" id="q55" name="q55" value="18">bc<br>
+            <input type="radio" id="q55" name="q55" value="19">Compile error<br>
+            <input type="radio" id="q55" name="q55" value="20">Runtime error<br>
+
+            <hr>
+            <p>Q 6 -In the standard library of C programming language, which of the following header file is designed for basic mathematical operations?</p>
+            <input type="radio" id="q66" name="q66" value="21">math.h.<br>
+            <input type="radio" id="q66" name="q66" value="22">conio.h.<br>
+            <input type="radio" id="q66" name="q66" value="23">dos.h.<br>
+            <input type="radio" id="q66" name="q66" value="24">studio.h<br>
+            <hr>
+            <p>Q 7 - Similarity between a structure, union and enumeration,</p>
+            <input type="radio" id="q77" name="q77" value="25">All are helpful in defining new variables<br>
+            <input type="radio" id="q77" name="q77" value="26">All are helpful in defining new datatype <br>
+            <input type="radio" id="q77" name="q77" value="27">All are helpful in defining new pointer<br>
+            <input type="radio" id="q77" name="q77" value="28">All are helpful in defining new structure<br>
+            <hr>
+            
+            <p>Q 8 - Which of the following is a logical AND operator?</p>
+            <input type="radio" id="q88" name="q88" value="29">!<br>
+            <input type="radio" id="q88" name="q88" value="30">&&<br>
+            <input type="radio" id="q88" name="q88" value="31">||<br>
+            <input type="radio" id="q88" name="q88" value="32">&<br>
+            <hr>
+            <p>Q 9 - What do the following statement defines?<br>
+			<br>
+                     int *ptr[10];</p>
+					 
+            <input type="radio" id="q99" name="q99" value="33">ptr is a pointer to an array of 10 integer pointers.<br>
+            <input type="radio" id="q99" name="q99" value="34">ptr is a array of 10 pointers to integers<br>
+            <input type="radio" id="q99" name="q99" value="35">ptr is a array of 10 integer pointers<br>
+            <input type="radio" id="q99" name="q99" value="36">none of above<br>
+			<hr>
+			<p>Q 10 - In the given below statement, what does the “pf” indicate?<br>
+			<br>
+			  int (*pf)();</p>
+            <input type="radio" id="q44" name="q44" value="37">pf is a pointer of a function which return int<br>
+            <input type="radio" id="q44" name="q44" value="38">pf is a pointer<br>
+            <input type="radio" id="q44" name="q44" value="39">pf is a function pointer<br>
+            <input type="radio" id="q44" name="q44" value="40">none of above<br>
+
+			<br>
+            
+        
+        
+        <input id="button" type="button" value="Submit" onclick="check();">
+        </form>
+        <!-- <p id="number_correct"></p> -->
+<script>
+function check(){
+var qu1 = document.quiz.q11.value;
+var qu2 = document.quiz.q22.value;
+var qu3 = document.quiz.q33.value;
+var qu4 = document.quiz.q44.value;
+var qu5 = document.quiz.q55.value;
+var qu6 = document.quiz.q66.value;
+var qu7 = document.quiz.q77.value;
+var qu8 = document.quiz.q88.value;
+var qu9 = document.quiz.q99.value;
+var correct = 0;
+
+if (qu1 == "4"){
+    correct++;
+}
+if (qu2 == "6"){
+    correct++;
+}
+if (qu3 == "10"){
+    correct++;
+}
+if (qu4 == "15"){
+    correct++;
+}
+if (qu5 == "17"){
+    correct++;
+}
+if (qu6 == "21"){
+    correct++;
+}
+if (qu7 == "26"){
+    correct++;
+}
+if (qu8 == "30"){
+    correct++;
+}
+if (qu9 == "34"){
+    correct++;
+}
+if (qu9 == "37"){
+    correct++;
+}
+// document.getElementById("number_correct").innerHTML = "you got" +correct+ "correct";
+alert("you got  "  +correct+  "  correct")
+}
+</script>
+</div>
+    </body>
+    
+</html>
