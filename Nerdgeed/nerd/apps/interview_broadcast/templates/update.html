@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <form method="post"  > 
+        {% csrf_token %}
+
+        <table>
+
+            {{ form.media }}
+            {{ form|crispy }}
+            <!-- <tr>
+                <td>Company Name :</td>
+                <td> {{ form.companyname }}</td>    
+                        
+
+            </tr>
+            <tr>
+                <td>Position</td>
+                <td>{{ form.position }}</td>    
+                                
+            </tr>
+            <tr>
+                <td>Recruiter </td>
+                <td> {{ form.recruiter }}</td>    
+                                
+            </tr>
+            <tr>
+                <td>Interviewtime </td>
+                <td> {{ form.interviewtime }}</td>    
+                                        
+            </tr>
+            <tr>
+                <td>Jobresposibilities</td>
+                <td> {{ form.jobresposibilities|as_crispy_field }}</td>    
+                                            
+            </tr>
+            <tr>
+                <td>Interviewslot </td>
+                <td> {{ form.interviewslot }}</td>    
+                                                
+            </tr>
+            <tr>
+                <td>Officelocation</td>
+                <td>{{ form.officelocation }}</td>    
+                                                    
+            </tr>
+            <tr>
+                    <td>Signature</td>
+                    <td>  {{ form.signature }}</td>    
+                                                        
+            </tr>
+             -->
+        </table>
+
+        <td><input type="submit" value="submit"></td>
+        
+    </form>
+    {% endblock %}

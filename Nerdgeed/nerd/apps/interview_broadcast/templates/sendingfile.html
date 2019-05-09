@@ -1,0 +1,69 @@
+<div style="text-align:center;min-width:640px;width:100%;height:100%;font-family:\'Helvetica Neue\',Helvetica,Arial,sans-serif;margin:0;padding:0" bgcolor="#fafafa">
+        <table border="0" cellpadding="0" cellspacing="0" style="text-align:center;min-width:640px;width:100%;margin:0;padding:0" bgcolor="#fafafa">
+            <tbody>
+                <tr>
+                    <td style="font-family:\'Helvetica Neue\',Helvetica,Arial,sans-serif;height:4px;font-size:4px;line-height:4px" bgcolor="#6b4fbb">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="font-family:\'Helvetica Neue\',Helvetica,Arial,sans-serif;font-size:13px;line-height:1.6;color:#5c5c5c;padding:25px 0">
+                    <img alt="NerdGeeklab" src="https://nerdgeeklab.com/images/logo-4.png" width="auto" height="60">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-family:\'Helvetica Neue\',Helvetica,Arial,sans-serif">
+                    <table border="0" cellpadding="0" cellspacing="0" style="width:640px;border-collapse:separate;border-spacing:0;margin:0 auto">
+                        <tbody>
+                            <tr>
+                                <td style="font-family:\'Helvetica Neue\',Helvetica,Arial,sans-serif;border-radius:3px;overflow:hidden;padding:18px 25px;border:1px solid #ededed" align="left" bgcolor="#ffffff">
+                                    <table border="0" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;border-spacing:0">
+                                        <tbody>
+                                            <tr>
+                                                    {% if ur %}
+                                                    
+                                                <td style="font-family:\'Helvetica Neue\',Helvetica,Arial,sans-serif;color:#333333;font-size:15px;font-weight:400;line-height:1.4;padding:15px 5px">
+                                                    <h1 style="font-family:\'Helvetica Neue\',Helvetica,Arial,sans-serif;color:#333333;font-size:18px;font-weight:400;line-height:1.4;margin:0;padding:0">
+                                                        Hi, '{{ ur.name }}',
+                                                    </h1>  
+                                                    
+                                                    {% endif %}
+                                                    {% if listing %}
+                                                    {% for k in listing %}
+                                                        <p>Thank you for applying to <span style="font-weight: bold">'{{ k.companyname }}'</span></p>
+                                                    <p> Your application for the <span style="font-weight: bold">'. {{ k.position }} .'</span> position stood out to us. We please to inform you that you have been shortlisted and like to invite you for an interview at our esteemed organization.</p>
+                                                    <p>You will meet with our Engineering department manager, <span style="font-weight: bold">'. {{ k.recruiter }}.'</span>, and two of his team members. The interview will last about <span style="font-weight: bold">{{ k.interviewtime }} </span>. You’ll have the chance to discuss the position’s responsibilities and learn more about our company.</p>
+                                                    <p>Here are the Job Details:</p>
+                                                    '. {{ k.jobresposibilities|safe }}  .'
+                                                    <p>We would like to conduct your interview sometime this week. Please let me know which one of the following time slots you would prefer. I will be sending you a calendar invitation once I receive your reply.</p>
+                                                    <ul>
+                                                        '.  {{ k.interviewslot }} .'
+                                                    </ul>
+                                                    <p>If none of these time slots work for you, let me know.</p>
+                                                    <p>Steps to Follow for the Final Confirmation of the Interview</p>
+                                                    <p><span>Fill you candidate Application <a href="https://nerdgeeklab.com/job-registration.php">Here</a></span><br>
+                                                        <span>Complete the test using android app <a href="">Here</a></span><br>
+                                                        <span>Download app link <a href="https://play.google.com/store/apps/details?id=com.NerdGeekLab&hl=en">Here</a> </span>
+                                                    </p>
+                                                    <p>Looking forward to hearing from you.</p>
+                                                    <p></p>
+                                                    <span>Thanks</span><br>
+                                                    <span>'. {{ k.signature }} .'</span><br>
+                                                    <span>Team Nerd Geek Lab</span><br><br>
+                                                    <img alt="NerdGeeklab" src="https://nerdgeeklab.com/images/logo-4.png" width="auto" height="50"><br>
+                                                    <a href="https://nerdgeeklab.com">https://nerdgeeklab.com</a><br>
+                                                    <span>+91 9958455307</span>
+                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4165.480636161091!2d77.29222492274727!3d28.607643694522984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4a27605685f%3A0xc972ac5015d4376c!2sSAPster+IT+Consulting!5e0!3m2!1sen!2sin!4v1553857765874!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                                </td>
+                                            </tr>
+                                            {% endfor %}
+                                            {% endif %}
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>

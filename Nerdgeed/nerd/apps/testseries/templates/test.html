@@ -1,0 +1,56 @@
+{% extend 'base.html' %}
+{% block content %}
+
+<link href='/static/css/style.css' rel='stylesheet' type=test/css>
+
+
+<div class="container">
+  <form mehtod='post'>
+  
+  
+  
+  <div class="row">
+    
+      <div class="col-md-4 col-lg-4 col-sm-4">
+        
+        <label>
+          <input type="radio" name="mobile" class="card-input-element" />
+
+            <div class="panel panel-default card-input">
+              <div class="panel-heading">Mobile</div>
+              
+            </div>
+
+        </label>
+        
+      </div>
+      <div class="col-md-4 col-lg-4 col-sm-4">
+        
+        <label>
+          <input type="radio" name="product" class="card-input-element" />
+
+            <div class="panel panel-default card-input">
+              <div class="panel-heading">Web</div>
+              
+            </div>
+        </label>
+        
+      </div>
+      <div class="col-md-4 col-lg-4 col-sm-4">
+        
+        <label>
+          <input type="radio" name="product" class="card-input-element" />
+
+            <div class="panel panel-default card-input">
+              <div class="panel-heading">Database</div>
+              
+            </div>
+        </label>
+        
+      </div>
+  </div>
+  
+</div>
+</form>
+
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load crispy_forms_tags %}
+    <a href='/display/'>display</a>
+    
+    <form method="post" > 
+    {% csrf_token %}
+    {{ obj.media }}
+    
+<!-- <div class="container"> -->
+    <div class="form-row">
+            <div class="form-group col-md-4 mb-0">
+              {{ obj.companyname|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-4 mb-0">
+                    {{ obj.position|as_crispy_field }}
+                  </div>
+    </div>
+    <div class="form-row">
+            <div class="form-group col-md-4 mb-0">
+              {{ obj.recruiter|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-4 mb-0">
+                    {{ obj.interviewtime|as_crispy_field }}
+                  </div>
+    </div>
+    <div  style="width:5500px">
+           
+    {{ obj.jobresposibilities|as_crispy_field }}</div>
+    <div class="form-row">
+            <div class="form-group col-md-4 mb-0">
+              {{ obj.interviewslot|as_crispy_field }}
+            </div>
+        
+     
+</div>
+    <div class="form-row">
+            <div class="form-group col-md-4 mb-0">
+              {{ obj.officelocation|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-4 mb-0">
+                    {{ obj.signature|as_crispy_field }}
+                  </div>
+    </div>
+    <button type="submit" class="btn btn-primary" style="float:center">Submit</button>
+    </form>
+    {% endblock %}
